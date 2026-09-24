@@ -13,6 +13,60 @@
 
 ---
 
+## 📸 Application Screenshots & Visual Walkthrough
+
+Here are the interactive states captured during the automated end-to-end browser evaluation:
+
+### 1. Home Dashboard & Free-Form Prompt Input
+*Clean landing interface with curated topic presets and expandable Interviewer Controls for failure simulation.*
+![1. Home Dashboard & Free-Form Prompt Input](./docs/screenshots/neurodeck_home_1790269406222.png)
+
+### 2. Multi-Step Animated Loading & Shimmer Skeleton Preview
+*Shows progress steps (Proxy $\rightarrow$ LLM $\rightarrow$ Schema Validation $\rightarrow$ Widget Assembly) with an elapsed timer and abort cancellation.*
+![2. Multi-Step Animated Loading & Shimmer Skeleton](./docs/screenshots/loading_state_1790269467771.png)
+
+### 3. Generated Study Deck with Mastery Progress & Category Badges
+*Displays the validated structured topic, summary, real-time mastery percentage bar, and filter controls.*
+![3. Generated Study Deck](./docs/screenshots/deck_view_1790269494514.png)
+
+### 4. 3D Flashcard Question Face (Difficulty Pill & Audio Read-Aloud)
+*Front face of the flashcard featuring difficulty indicators, category pill, and Web Speech API audio synthesis.*
+![4. 3D Flashcard Front](./docs/screenshots/flashcard_front_1790269521789.png)
+
+### 5. 3D Flashcard Flipped Face (Answer, Memory Cue & Insight)
+*Smooth 3D perspective flip revealing the validated answer, memory cue, and mastery rating shortcuts (<kbd>1</kbd> Need Review, <kbd>2</kbd> Mastered).*
+![5. 3D Flashcard Flipped Back](./docs/screenshots/flashcard_flipped_1790269551898.png)
+
+### 6. Interactive Knowledge Assessment Quiz View
+*Structured multiple-choice quiz questions generated directly from curriculum concepts.*
+![6. Interactive Quiz Tab](./docs/screenshots/quiz_tab_1790269690855.png)
+
+### 7. Instant Quiz Feedback (Correct/Incorrect Highlight & Explanations)
+*Immediate visual feedback with option highlighting, checkmark/cross feedback icons, and conceptual explanations.*
+![7. Instant Quiz Feedback & Explanation](./docs/screenshots/quiz_feedback_1790269725954.png)
+
+### 8. Targeted Weak Spots Cockpit (Flagged Cards & Missed Quiz Items)
+*Dedicated gap-closing review station consolidating all missed items with one-click AI reinforcement.*
+![8. Targeted Weak Spots Cockpit](./docs/screenshots/weak_spots_tab_1790269806615.png)
+
+### 9. Full Application Dashboard View & Mode Navigation
+*Overview of the interactive tool showing tab switching between Flashcards, Quiz, Weak Spots, and Notes Outline.*
+![9. Full Dashboard View](./docs/screenshots/full_page_top_1790270051900.png)
+
+### 10. Saved Sessions History Drawer Toggle
+*Top navigation header highlighting active backend proxy connectivity and saved sessions badge.*
+![10. Saved Sessions Drawer Toggle](./docs/screenshots/saved_sessions_drawer_1790270122377.png)
+
+### 11. LocalStorage Saved Sessions Management Panel
+*Side drawer listing saved study decks with timestamp, card count, quick load, and delete options.*
+![11. Saved Sessions Panel Open](./docs/screenshots/saved_sessions_panel_open_1790270171656.png)
+
+### 12. Sleek Light Theme Mode
+*High-contrast, accessible light theme toggle for versatile studying environments.*
+![12. Light Theme Mode](./docs/screenshots/light_theme_mode_1790270215217.png)
+
+---
+
 ## 🚀 Key Features
 
 ### 1. Interactive 3D Flashcard Deck
