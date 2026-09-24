@@ -443,6 +443,23 @@ Please update, expand, or adjust the flashcards and quiz according to the refine
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Backend LLM Proxy server running on port ${PORT}`);
+// Serve compiled frontend in production if dist/ exists
+import path from 'path';
+const distPath = path.join(process.cwd(), 'dist');
+app.use(express.static(distPath));
+
+// Fallback to index.html for client-side routing
+app.get('*', (req: Request, res: Response, next) => {
+  if (req.path.startsWith('/api')) return next();
+  res.sendFile(path.join(distPath, 'index.html'), err => {
+    if (err) next();
+  });
 });
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Backend LLM Proxy server running on port ${PORT}`);
+  });
+}
+
+export default app;
